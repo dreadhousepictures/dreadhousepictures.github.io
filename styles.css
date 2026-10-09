@@ -87,7 +87,7 @@ em {
 /* HEADER */
 
 .site-header {
-  height: 86px;
+  min-height: 86px;
   width: 100%;
   padding: 0 5.5%;
   display: flex;
@@ -110,8 +110,8 @@ em {
 
 
 .logo-placeholder {
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1145,8 +1145,8 @@ h2 {
   }
 
   .logo-placeholder {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
 
   .brand-name {
