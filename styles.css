@@ -1362,3 +1362,12 @@ h2 {
     gap: 14px;
   }
 }
+
+
+/* Make the logo larger on mobile */
+@media (max-width: 768px) {
+  .logo-placeholder {
+    width: 90px;
+    height: 90px;
+  }
+}
