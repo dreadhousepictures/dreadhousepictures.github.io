@@ -364,16 +364,23 @@ h2 {
   background-position: center 55%;
   background-repeat: no-repeat;
 }
+/* 1. Darken the overlay, specifically strengthening the top-left sky area */
 .hero-vignette {
   position: absolute;
   inset: 0;
-  z-index: -2;
-  background:
-    linear-gradient(90deg, rgba(5, 5, 5, 0.97) 0%, rgba(5, 5, 5, 0.83) 36%, rgba(5, 5, 5, 0.25) 76%, rgba(5, 5, 5, 0.48) 100%),
-    linear-gradient(0deg, rgba(9, 9, 9, 0.98) 0%, transparent 30%, rgba(9, 9, 9, 0.2) 80%, rgba(9, 9, 9, 0.6) 100%);
+  z-index: 1; /* Sits on top of the hero image */
+  pointer-events: none;
+  background: 
+    /* Dark shade across the top and left sky area */
+    linear-gradient(180deg, rgba(5, 5, 5, 0.85) 0%, rgba(5, 5, 5, 0.6) 30%, transparent 70%),
+    /* Horizontal dark shadow covering the whole left half where text sits */
+    linear-gradient(90deg, rgba(5, 5, 5, 0.95) 0%, rgba(5, 5, 5, 0.85) 40%, rgba(5, 5, 5, 0.25) 75%, transparent 100%);
 }
 
+/* 2. Ensure text content sits cleanly ABOVE the vignette */
 .hero-content {
+  position: relative;
+  z-index: 2; /* Brings text in front of the dark vignette */
   width: min(850px, 100%);
   padding: 70px 8% 100px;
   animation: fadeUp 1s 0.15s both;
