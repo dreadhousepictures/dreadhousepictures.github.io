@@ -730,7 +730,7 @@ h2 {
   overflow: hidden;
   background:
     linear-gradient(0deg, rgba(7, 7, 7, 0.68), rgba(7, 7, 7, 0.08)),
-    url("./dreadhouse2.jpg")
+    url("dreadhouse2.jpg")
     center / cover;
   filter: saturate(0.55);
 }
