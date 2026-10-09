@@ -359,14 +359,11 @@ h2 {
 .hero-image {
   position: absolute;
   inset: 0;
-  z-index: -3;
-  background-image: url("https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=2400&q=85");
+  background-image: url("./dread-house-hero.png");
   background-size: cover;
-  background-position: center 52%;
-  transform: scale(1.025);
-  animation: slowReveal 2s ease-out both;
+  background-position: center 55%;
+  background-repeat: no-repeat;
 }
-
 .hero-vignette {
   position: absolute;
   inset: 0;
